@@ -5,21 +5,21 @@
 class Kirkup < Formula
   desc "CLI tool to track and retro your AI coding agent activity"
   homepage "https://github.com/GrayFlash/kirkup-cli"
-  version "0.1.1"
+  version "0.1.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/GrayFlash/kirkup-cli/releases/download/v0.1.1/kirkup-cli_darwin_amd64.tar.gz"
-      sha256 "f5393abcf5f55d07a10a195fe2104513f8fc2a61ee7c1582e7680243c4857916"
+      url "https://github.com/GrayFlash/kirkup-cli/releases/download/v0.1.2/kirkup-cli_darwin_amd64.tar.gz"
+      sha256 "c318d09b185ba15b463abe9e8aa010cbed43f7493a402a71d613bf6849234866"
 
       define_method(:install) do
         bin.install "kirkup"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/GrayFlash/kirkup-cli/releases/download/v0.1.1/kirkup-cli_darwin_arm64.tar.gz"
-      sha256 "21e9a81c6698b7f5013e38503ac7f935ddbdf9f62b4b3a61712227fa4cbb7861"
+      url "https://github.com/GrayFlash/kirkup-cli/releases/download/v0.1.2/kirkup-cli_darwin_arm64.tar.gz"
+      sha256 "e052f3e1ddc51d10190cccf378bebdd54902ff59bb301cc7a1350a44468934c1"
 
       define_method(:install) do
         bin.install "kirkup"
@@ -29,15 +29,15 @@ class Kirkup < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/GrayFlash/kirkup-cli/releases/download/v0.1.1/kirkup-cli_linux_amd64.tar.gz"
-      sha256 "877c4713cddc778425cb15a6df306f54e5fc9debda97a975d9250f67065ba009"
+      url "https://github.com/GrayFlash/kirkup-cli/releases/download/v0.1.2/kirkup-cli_linux_amd64.tar.gz"
+      sha256 "f6a7c52b00c5c526a538f0681cf543c0a3aa7892e49b739cec7763647b8c85c4"
       define_method(:install) do
         bin.install "kirkup"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/GrayFlash/kirkup-cli/releases/download/v0.1.1/kirkup-cli_linux_arm64.tar.gz"
-      sha256 "72db7cf02ef496b170a16d6766a68ad38493a521db7fd5d6fec761c8de7bb238"
+      url "https://github.com/GrayFlash/kirkup-cli/releases/download/v0.1.2/kirkup-cli_linux_arm64.tar.gz"
+      sha256 "3699de54e6fc5c3b5e4e9f17c55284620e24008b713665b30efb2587c32f7542"
       define_method(:install) do
         bin.install "kirkup"
       end
